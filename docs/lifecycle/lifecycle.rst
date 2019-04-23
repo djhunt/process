@@ -24,12 +24,18 @@ Project States
 +---------------+-------------------------------------------------------------+
 | Project State | State Summary                                               |
 +===============+=============================================================+
-| Non-LFN       | Project does not exist or exists outside of LFN.            |
+| none          | Project does not exist or exists outside of LFN.            |
 +---------------+-------------------------------------------------------------+
-| Non-TAC       | Project is admitted to the LFN but does not have a          |
-|               | representative on the TAC.                                  |
+| Sandbox       | Project is admitted to LFN but does not have direct funding |
+|               | from LFN.  The intent is to enable new projects to gain     |
+|               | visibility and participate in the LFN with minimal impact   |
+|               | on existing projects until they are ready for a subsequent  |
+|               | state.                            			      |	
 +---------------+-------------------------------------------------------------+
-| TAC           | Project is granted TAC representation.                      |
+| Incubation    | Project has matured beyond sandbox and may receive some     |
+|               | funding but does not yet have a representative on the TAC.  |
++---------------+-------------------------------------------------------------+
+| TAC Project   | Project is granted TAC representation.                      |
 +---------------+-------------------------------------------------------------+
 | Archived      | Project is no longer active.                                |
 +---------------+-------------------------------------------------------------+
@@ -40,13 +46,16 @@ Project State Transitions
 +--------------+-------------------+----------------------+-------------------+
 | From State   | To State          | TAC Review           | Board Review      |
 +==============+===================+======================+===================+
-| Non-LFN      | Non-TAC           | LFN Entry Review     | LFN Entry Review  |
+| none         | Sandbox           | LFN Entry Review     | LFN Entry Review  |
+|              |                   | Quarterly Health Rvw |                   |
 +--------------+-------------------+----------------------+-------------------+
-| Non-TAC      | TAC               | TAC Admission Review |                   |
+| Sandbox      | Incubation        | Incubation Review    | Incubation Review |
++--------------+-------------------+----------------------+-------------------+
+| Incubation   | TAC               | TAC Admission Review | TAC Admission Rvw |
 +--------------+-------------------+----------------------+-------------------+
 | *            | Archived          | Archival Review      |                   |
 +--------------+-------------------+----------------------+-------------------+
-| *            | Non-LFN           | LFN Exit Review      | LFN Exit Review   |
+| *            | none              | LFN Exit Review      | LFN Exit Review   |
 +--------------+-------------------+----------------------+-------------------+
 
 Project Reviews
@@ -103,6 +112,9 @@ must minimally specify:
 * What is the top level technical decision making body for the project,
   analogous to a TSC, to which the TAC should look for interfaces.
 
+Additionally, the review will confirm that the incoming project scope is within
+scope of the LFN.
+
 Outcome for TAC LFN Admission Review
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -117,36 +129,129 @@ Board LFN Entry Review
 ++++++++++++++++++++++
 
 It is up to the Board to define its own criteria and process of the Board's LFN
-Entry Review. The TAC recommends the Board make its LFN Entry Review criteria
-and process public and accept design input from the public.
+Entry Review. Such review may include legal, trademark, and license reviews. The 
+TAC recommends the Board make its LFN Entry Review criteria and process public 
+and accept design input from the public.  
+
+Budget Guidance: The TAC recommends that the governing board allocate no funding 
+to Sandbox projects and that those projects cannot use cross-project funding
+buckets.
+
+Quarterly Health Review
+***********************
+
+The TAC should review all projects in the Sandbox state on a quarterly basis. 
+The goal of the quarterly health review is to assist the projects in their 
+participation in LFN and ensure the project's community remains healthy.
+
+Incubation Review
+*****************
+
+The Board and the TAC both review proposals for projects to advance to the 
+Incubation state.
+
+TAC Incubation Review
++++++++++++++++++++++
+
+TAC Incubation Reviews should happen before, and provide input into, Board 
+Incubation Reviews.
+
+Required Information for TAC Incubation Review
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+An up-to-date instantiation of the Project Data Template is required for an 
+Incubation Review.
+
+Criteria for Incubation Review
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Mandatory criteria for successful completion of the Incubation review is
+the documented demonstrable progress since induction toward open source best practices. This would include but is not limited to contributor diversity and 
+open governance.
+
+As an additional (non-mandatory) guideline, the project should show demonstrable
+progress in marketplace adoption.  This may be measured by instances of the
+project in production or the project being embedded in other open source 
+projects.
+
+As part of the Incubation Review, the TAC should identify how the project fits
+with other LFN projects, including any overlap or harmonization potential.
+
+Outcome for Incubation Admission Review
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+As an outcome of the TAC's Incubation Review, the TAC will provide the following
+feedback to the LFN Governing Board for use as input to the LFN Board's 
+Incubation Review:
+
+* Summary of findings
+* Recommendation to accept the project into the Incubation stage or not.
+
+Board Incubation Review
++++++++++++++++++++++++
+
+It is up to the Board to define its own criteria and process of the Board's 
+Incubation Review. The TAC recommends the Board make its Incubation Review 
+criteria and process public and accept design input from the public.  
+
+Budget Guidance: The TAC recommends to the board that any new Incubation 
+project not erode existing TAC project budgets.
+
+ 
+TAC Admission Review
+*****************
+
+The Board and the TAC both review proposals for projects to advance to the 
+TAC project state.
 
 TAC Admission Review
-********************
++++++++++++++++++++++
 
-The TAC Admission Review is intended for the TAC to consider whether a
-Non-TAC Project should have a representative on the TAC. It is initiated by a
-TAC Admission Request from the Non-TAC Project.
+The TAC Admission Review is intended for the TAC to consider whether an
+Incubation Project should have a representative on the TAC. It is initiated 
+by a TAC Admission Request from an Incubation Project.
 
 Required Information for TAC Admission Review
-+++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 An up-to-date instantiation of the Project Data Template is required for a TAC
 Admission Review.
 
 Criteria for TAC Admission Review
-+++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Mandatory criteria for successful completion of the TAC Admission Review are
 maintenance of the mandatory criteria for LFN Entry and demonstration of
 adequate project Diversity, a clear statement of how the Project will select
-its TAC Representative and adherence to the LFN Principles.
+its TAC Representative and adherence to the LFN Principles.  
+
+The project should also show demonstrable progress in integrating with other 
+LFN projects, participating in cross-LFN initiatives and/or contributing to 
+extending or strengthening the total scope of the LFN.
+
+As an additional (non-mandatory) guideline, the project should show continued
+progress in marketplace adoption. 
 
 Outcome for TAC Admission Review
-++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Upon approval by the TAC of the Admission of a project to the TAC that project
-will be considered a TAC project. The TAC will notify the Board immediately of
-its decision.
+As an outcome of the TAC Admission Review, the TAC will provide the following
+feedback to the LFN Governing Board for use as input to the LFN Board's 
+TAC Admission Review:
+
+* Summary of findings
+* Recommendation to accept the project into the TAC Project stage or not.
+
+Board TAC Admission Review
++++++++++++++++++++++++++++
+
+It is up to the Board to define its own criteria and process of the Board's 
+TAC Induction Review. The TAC recommends the Board make its TAC Admission Review 
+criteria and process public and accept design input from the public.  
+
+Budget Guidance: The TAC recommends to the board that any new TAC project 
+receive funding through the existing board and TAC process for determining
+budget priorities. 
 
 Archival Review
 ***************
@@ -198,12 +303,8 @@ reviews.
 Disposition of Existing Projects
 --------------------------------
 
-OpenDaylight, OPNFV, FD.io, and ONAP are in state TAC. PNDA and SNAS are in
-state Non-TAC. Tungsten Fabric was `conditionally inducted by the Board
-<tf-condit-induct-email_>`__ as Non-TAC and should do an LFN Entry Review once
-the process is established.
-
-.. _tf-condit-induct-email: https://lists.lfnetworking.org/g/TAC/message/250
+OpenDaylight, OPNFV, FD.io, and ONAP are in state TAC. PNDA, SNAS, and Tungsten
+Fabric are in state Incubation (?).
 
 Amendment of Technical Governance
 ---------------------------------
