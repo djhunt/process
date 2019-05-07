@@ -32,8 +32,9 @@ Project States
 |               | on existing projects until they are ready for a subsequent  |
 |               | state.                            			      |	
 +---------------+-------------------------------------------------------------+
-| Incubation    | Project has matured beyond sandbox and may receive some     |
-|               | funding but does not yet have a representative on the TAC.  |
+| Incubation    | Project has matured beyond sandbox and may receive          |
+|               | funding (while not impacting TAC projects) but does not yet |
+|               | have a representative on the TAC.                           |
 +---------------+-------------------------------------------------------------+
 | TAC Project   | Project is granted TAC representation.                      |
 +---------------+-------------------------------------------------------------+
@@ -52,6 +53,9 @@ Project State Transitions
 | Sandbox      | Incubation        | Incubation Review    | Incubation Review |
 +--------------+-------------------+----------------------+-------------------+
 | Incubation   | TAC               | TAC Admission Review | TAC Admission Rvw |
++--------------+-------------------+----------------------+-------------------+
+| TAC          | Incubation        | Incubation Reversal  |                   |
+|              |                   | Review               |                   |
 +--------------+-------------------+----------------------+-------------------+
 | *            | Archived          | Archival Review      |                   |
 +--------------+-------------------+----------------------+-------------------+
@@ -130,12 +134,14 @@ Board LFN Entry Review
 
 It is up to the Board to define its own criteria and process of the Board's LFN
 Entry Review. Such review may include legal, trademark, and license reviews. The 
-TAC recommends the Board make its LFN Entry Review criteria and process public 
-and accept design input from the public.  
+TAC strongly recommends the Board make its LFN Entry Review criteria and process 
+public and accept design input from the public.  
 
 Budget Guidance: The TAC recommends that the governing board allocate no funding 
 to Sandbox projects and that those projects cannot use cross-project funding
-buckets.
+buckets.  Sandbox projects should still be able to take advantage of LFN
+membership that does not require additional funding, such as logo inclusion in
+marketing materials or attendance at LFN events.
 
 Quarterly Health Review
 ***********************
@@ -191,21 +197,21 @@ Board Incubation Review
 +++++++++++++++++++++++
 
 It is up to the Board to define its own criteria and process of the Board's 
-Incubation Review. The TAC recommends the Board make its Incubation Review 
-criteria and process public and accept design input from the public.  
+Incubation Review. The TAC strongly recommends the Board make its Incubation 
+Review criteria and process public and accept design input from the public.  
 
 Budget Guidance: The TAC recommends to the board that any new Incubation 
 project not erode existing TAC project budgets.
 
  
 TAC Admission Review
-*****************
+********************
 
 The Board and the TAC both review proposals for projects to advance to the 
 TAC project state.
 
 TAC Admission Review
-+++++++++++++++++++++
+++++++++++++++++++++
 
 The TAC Admission Review is intended for the TAC to consider whether an
 Incubation Project should have a representative on the TAC. It is initiated 
@@ -246,12 +252,42 @@ Board TAC Admission Review
 +++++++++++++++++++++++++++
 
 It is up to the Board to define its own criteria and process of the Board's 
-TAC Induction Review. The TAC recommends the Board make its TAC Admission Review 
-criteria and process public and accept design input from the public.  
+TAC Induction Review. The TAC strongly recommends the Board make its TAC 
+Admission Review criteria and process public and accept design input from 
+the public.  
 
 Budget Guidance: The TAC recommends to the board that any new TAC project 
 receive funding through the existing board and TAC process for determining
 budget priorities. 
+
+Incubation Reversal Review
+**************************
+
+A TAC Project may be placed into the Incubation state if the TAC believes
+(by majority vote) that the project no longer meets the criteria to be a 
+TAC Project or by a majority vote of the Project's TSC to request the
+project be moved to Incubation state. Prior to TAC initiation of an Incubation
+Reversal Review of a Project, a good faith effort must be made to contact the 
+Project's TSC and initiate a dialog about the future of the Project.
+
+Criteria for Incubation Reversal Review
++++++++++++++++++++++++++++++++++++++++
+
+Mandatory criteria for moving a TAC project to Incubation State are one of:
+
+* A clear request from the Project to be moved to Incubation.
+* Clear evidence of a decrease in project activity causing the project to no
+  longer meet TAC admission criteria, such as project diversity, adherence to
+  LFN principles or overall LFN participation. Additionally, demonstration of 
+  a good faith effort by the TAC to contact the Project's TSC and come to a 
+  positive resolution.
+
+Outcome for Incubation Reversal Review
+++++++++++++++++++++++++++++++++++++++
+
+The TAC will notify the Board immediately of any decision to move a TAC 
+project back to Incubation state.
+
 
 Archival Review
 ***************
@@ -303,8 +339,8 @@ reviews.
 Disposition of Existing Projects
 --------------------------------
 
-OpenDaylight, OPNFV, FD.io, and ONAP are in state TAC. PNDA, SNAS, and Tungsten
-Fabric are in state Incubation (?).
+As of March 7, 2019, OpenDaylight, OPNFV, FD.io, and ONAP are in state TAC. 
+PNDA, SNAS, and Tungsten Fabric are in state Incubation.
 
 Amendment of Technical Governance
 ---------------------------------
