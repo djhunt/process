@@ -143,8 +143,8 @@ buckets.  Sandbox projects should still be able to take advantage of LFN
 membership that does not require additional funding, such as logo inclusion in
 marketing materials or attendance at LFN events.
 
-Quarterly Health Review
-***********************
+Quarterly Sandbox Health Review
++++++++++++++++++++++++++++++++
 
 The TAC should review all projects in the Sandbox state on a quarterly basis. 
 The goal of the quarterly health review is to assist the projects in their 
@@ -202,6 +202,15 @@ Review criteria and process public and accept design input from the public.
 
 Budget Guidance: The TAC recommends to the board that any new Incubation 
 project not erode existing TAC project budgets.
+
+Annual Incubation Health Review
++++++++++++++++++++++++++++++++
+
+The TAC should review all projects in the Incubation state on an annual basis. 
+The goal of the annual health review is to assist the projects in their 
+participation in LFN, ensure the project's community remains healthy, and, 
+where appropriate, assist the project in advancing to the TAC stage (or 
+alternatively choose to remain in incubation).
 
  
 TAC Admission Review
