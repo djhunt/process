@@ -119,6 +119,10 @@ Project Tooling
 
 Details about the tooling used by the candidate project.
 
+Note that the TAC has made a recommendation on infrastructure tooling.  Please
+note where appropriate if you comply with these recommendations.
+https://wiki.lfnetworking.org/display/LN/Infrastructure+Working+Group+Summary+Report
+
 * Bug tracker
 
   * Links to bug trackers used by the candidate project.
